@@ -16,17 +16,17 @@ function send_mail()
     $mail->isSMTP();                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';       // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;               // Enable SMTP authentication
-    $mail->Username = 'mikefury400@gmail.com';   // SMTP username
-    $mail->Password = 'abc.1612169';   // SMTP password
+    $mail->Username = 'YOUR-EMAIL';   // SMTP username
+    $mail->Password = 'YOUR-PASSWORD';   // SMTP password
     $mail->SMTPSecure = 'tls';            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                    // TCP port to connect to
 
 // Sender info
-    $mail->setFrom('mikefury400@gmail.com', 'Rajesh Kumar');
-    $mail->addReplyTo('mikefury400@gmail.com', 'Rajesh kumar');
+    $mail->setFrom('YOUR-EMAIL', 'Rajesh Kumar');
+    $mail->addReplyTo('YOUR-EMAIL', 'Rajesh kumar');
 
 // Add a recipient
-    $mail->addAddress('mikefury400@gmail.com');
+    $mail->addAddress('YOUR-EMAIL.com');
 
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
@@ -35,7 +35,7 @@ function send_mail()
     $mail->isHTML(true);
 
 // Mail subject
-    $mail->Subject = 'Email from Localhost by CodexWorld';
+    $mail->Subject = 'Email from Localhost by Rajesh Kumar';
 
 // Mail body content
     $bodyContent = '<h1>How to Send Email from Localhost using PHP by Rajesh Kumar</h1>';
